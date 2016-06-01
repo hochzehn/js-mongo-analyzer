@@ -24,10 +24,5 @@ function json_to_valid_json() {
   echo "OK"
 }
 
-file="results/sample_size.js"
-echo "var sample_size = " > "$file"
-cat results/sample_size.json >> "$file"
-echo ";" >> "$file"
-
 json_to_valid_json "results/js.library.json"
 json_to_valid_json "results/js.library.version.json"
